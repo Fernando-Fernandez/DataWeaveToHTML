@@ -1,0 +1,10 @@
+<template>
+		<lightning-formatted-rich-text value={richTextValue} >
+		</lightning-formatted-rich-text>
+    <template if:true={error} >
+        <lightning-card variant="Narrow" icon-name="utility:error" 
+                    title="Error" >
+            <p class="slds-p-horizontal_small">{error}</p>
+        </lightning-card>
+    </template>
+</template>

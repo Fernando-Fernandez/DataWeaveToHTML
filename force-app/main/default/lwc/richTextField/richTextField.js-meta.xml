@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Rich Text Field</masterLabel>
+	<targets>
+		<target>lightning__RecordPage</target>
+		<target>lightning__AppPage</target>
+		<target>lightning__FlowScreen</target>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__FlowScreen,lightningCommunity__Default" >
+				<property label="Record Id" name="recordId" type="String" />
+				<property label="Object API Name" name="objectApiName" type="String" />
+				<property label="Field Name" name="fieldName" type="String" />
+				<property label="Rich Text Content" name="richTextContent" type="String" />
+		</targetConfig>   
+	</targetConfigs>
+</LightningComponentBundle>
